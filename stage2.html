@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>stage2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: Arial;
+    color: black;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    background-color: white;
+}
+
+.right {
+    right: 0;
+    background-color: white;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="split left">
+  
+  <table>
+  <form action="/action_page.php">
+     <tr><td colspan="2"><h2>Applicant Contact Information</h2></td></tr>
+     <tr>
+	     <td><b>Office NO:</b></td>
+		 <td><input type="text" name="fullname" ></td>
+	 </tr>
+     <tr>
+	     <td><b>Residence NO:</b></td>
+	     <td><input type="text" name="firstname" ></td>
+	 </tr>
+     <tr>
+	     <td><b>Mobile NO:</b></td>
+		 <td><input type="text" name="surname" ></td>
+	 </tr>	
+	 <tr><td colspan="2"><h2>Emergency Contact Person's Details</h2></td></tr>
+	 <tr>
+	     <td><b>Name:</b></td>
+		 <td><input type="text" name="fullname" ></td>
+	 </tr>
+	 	 <tr>
+	     <td><b>Country:</b></td>
+		 <td>
+		 <select>
+          <option value="country">Bangladesh</option>
+		 </select>
+		</td>
+	 </tr>
+	 <tr>
+	     <td>Village/House:</td>
+		 <td><input type="text" name="fullname" ></td>
+	 </tr>
+          <tr>
+	     <td>Road/Block/Sector:</td>
+		 <td><input type="text" name="fullname" ></td>
+	 </tr>
+     <tr>
+	     <td>District:</td>
+		 <td>
+		  <select>
+           <option value="district">-select-</option>
+		  </select>
+		 </td>
+	 </tr>
+	 <tr>
+	     <td>Police Station:</td>
+		 <td>
+		  <select>
+           <option value="station"> </option>
+		  </select>
+		 </td>
+	 </tr>
+	 <tr>
+	     <td>Post Office:</td>
+		 <td>
+		  <select>
+           <option value="office"> </option>
+		  </select>
+		 </td>
+	 </tr>
+	     <tr>
+	     <td>Contact NO:</td>
+		 <td><input type="text" name="number" ></td>
+	 </tr>
+	     <tr>
+	     <td>Email:</td>
+		 <td><input type="text" name="email" ></td>
+	 </tr>
+	 	 <tr>
+	     <td>Relationship:</td>
+		 <td>
+		  <select>
+           <option value="relation">-select-</option>
+		  </select>
+		 </td>
+	 </tr>
+	 
+  </table>
+    
+</div>
+     
+<div class="split right">
+	 <table>
+	 <tr><td colspan="2"><h2>Old Passport Information</h2></td></tr>
+	 <tr>
+	     <td>Passport NO:</td>
+		 <td><input type="text" name="number" ></td>
+	 </tr>
+	     <tr>
+	     <td>Place Of Issue:</td>
+		 <td><input type="text" name="issueplace" ></td>
+	 </tr>
+	 <tr>
+	     <td>Date Of Issue:</td>
+		 <td><input type="text" name="issuedate" ></td>
+	 <tr>
+	     <td>Re-issue Reason:</td>
+		 <td>
+		  <select>
+           <option value="reason">-select-</option>
+		  </select>
+		 </td>
+	 </tr>
+	<tr> 
+      <td></td>
+      <td colspan="2"><input type="submit" value="Next page"></td>
+    </tr>
+		 </form>
+	 </table>
+</div>
+	 
+</body>

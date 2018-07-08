@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>stage1</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: Arial;
+    color: black;
+}
+
+.split {
+    height: 90%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    background-color: white;
+}
+
+.right {
+    right: 0;
+    background-color: white;
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="split left">
+  
+  <table>
+  <form action="/action_page.php">
+     <tr>
+	     <td colspan="2">
+       <h2>Passport Application Information</h2>
+	     </td>
+     <tr>
+        <td>Applying in:</td>
+		<td>
+		 <select>
+          <option value="country">Bangladesh</option>
+		 </select>
+		</td>
+     </tr>
+	 <tr>
+	     <td>Application Type:</td>
+		 <td>NEW Application</td>
+	 </tr>
+	 <tr>
+	     <td>Passport Type:</td>
+		 <td>
+		 <select>
+          <option value="select">-Select-</option>
+		 </select>
+		</td>
+	 </tr>
+	 <tr>
+	     <td>Delivery Type:</td>
+	     <td> 
+           <input type="radio" name="delivery" value="regular" checked> Regular <br>
+           <input type="radio" name="delivery" value="express"> Express
+         </td>
+	 </tr>
+      <tr><td colspan="2"><h2>Personal Information</h2></td></tr>
+     <tr>
+	     <td>Name Of Applicant:</td>
+		 <td><input type="text" name="fullname" ></td>
+	 </tr>
+     <tr>
+	     <td>First part(given name):</td>
+	     <td><input type="text" name="firstname" ></td>
+	 </tr>
+     <tr>
+	     <td>Second Part(surname):</td>
+		 <td><input type="text" name="surname" ></td>
+	 </tr>
+     <tr>
+	 <td>Father's Name:</td>
+	 <td><input type="text" name="fullname" ></td>
+	 </tr>
+     <tr>
+	     <td>Father's Nationality:</td>
+		 <td>
+		  <select>
+           <option value="nationality">Bangladeshi</option>
+		  </select>
+		 </td>
+	 </tr>
+     <tr>
+	     <td>Father's Profession:</td>
+		 <td>
+		  <select>
+           <option value="profession">-select-</option>
+		  </select>
+		 </td>
+	 </tr>	 
+	 	 </tr>
+     <tr>
+	 <td>Mother's Name:</td>
+	 <td><input type="text" name="fullname" ></td>
+	 </tr>
+     <tr>
+	     <td>Mother's Nationality:</td>
+		 <td>
+		  <select>
+           <option value="nationality">Bangladeshi</option>
+		  </select>
+		 </td>
+	 </tr>
+     <tr>
+	     <td>Mother's Profession:</td>
+		 <td>
+		  <select>
+           <option value="profession">-select-</option>
+		  </select>
+		 </td>
+	 </tr>	 
+	      <tr>
+	 <td>Spouse's Name:</td>
+	 <td><input type="text" name="fullname" ></td>
+	 </tr>
+     <tr>
+	     <td>Spouse's Nationality:</td>
+		 <td>
+		  <select>
+           <option value="nationality">Bangladeshi</option>
+		  </select>
+		 </td>
+	 </tr>
+     <tr>
+	     <td>Spouse's Profession:</td>
+		 <td>
+		  <select>
+           <option value="profession">-select-</option>
+		  </select>
+		 </td>
+	 </tr>	 
+	      <tr>
+	     <td>Mental Status:</td>
+		 <td>
+		  <select>
+           <option value="status">-select-</option>
+		  </select>
+		 </td>
+	 </tr>	 
+	 <tr>
+	     <td>Applicant's Profession:</td>
+		 <td>
+		  <select>
+           <option value="profession">-select-</option>
+		  </select>
+		 </td>
+	 </tr>	 
+	 <tr>
+	     <td>Country of birth:</td>
+		 <td>
+		  <select>
+           <option value="birth">Bangladesh</option>
+		  </select>
+		 </td>
+	 </tr>	 
+	 <tr>
+	     <td>Birth District:</td>
+		 <td>
+		  <select>
+           <option value="district">-select-</option>
+		  </select>
+		 </td>
+	 </tr>	 
+    	 
+  </table>
+</div>
+
+<div class="split right">
+  
+    <table>
+	 
+	  <tr>
+	     <td>Date of birth:</td>
+		  <td><input type="text" name="fullname" ></td>
+	 </tr>	 
+	 <tr>
+        <td><b>Gender</b></td>
+ 
+     <td> 
+       <input type="radio" name="gender" value="male" checked> Male <br>
+       <input type="radio" name="gender" value="female"> Female<br>
+       <input type="radio" name="gender" value="other"> Other
+	   </td>
+     </tr>
+	 	  <tr>
+	     <td>Birth ID NO:</td>
+		  <td><input type="text" name="fullname" ></td>
+	 </tr>	 
+	 	  <tr>
+	     <td>National ID NO:</td>
+		  <td><input type="text" name="fullname" ></td>
+	 </tr>	 
+	 	  <tr>
+	     <td>Tax ID NO:</td>
+		  <td><input type="text" name="fullname" ></td>
+	 </tr>	 
+	<tr>  
+      <td><b>Height</b></td>
+  
+      <td>
+        <select>
+          <option value="date">cm</option>
+        </select>
+	    <select>
+          <option value="month">inch</option>
+        </select>
+      </td>
+    </tr>
+		 <tr>
+	     <td>Religion:</td>
+		 <td>
+		  <select>
+           <option value="religion">-select-</option>
+		  </select>
+		 </td>
+	 </tr>	 
+	 	 	  <tr>
+	     <td>Email:</td>
+		  <td><input type="text" name="email" ></td>
+	 </tr>	
+     <tr><td colspan="2"><h2>Citizenship Information</h2></td></tr>	 
+	<tr>
+	     <td>Nationality:</td>
+		 <td>
+		  <select>
+           <option value="nationality">Bangladeshi</option>
+		  </select>
+		 </td>
+	 </tr>
+	 <tr>
+	     <td>Citizenship Status:</td>
+		 <td>
+		  <select>
+           <option value="status">Birth</option>
+		  </select>
+		 </td>
+	 </tr>
+	 <tr>
+	     <td>Dual Citizenship:</td>
+	     <td> 
+           <input type="radio" name="citizentype" value="yes" checked> YES <br>
+           <input type="radio" name="citizentype" value="no"> NO
+         </td>
+	 </tr>
+	<tr><td colspan="2"><h2>Citizenship Information</h2></td></tr>
+	     <tr>
+	     <td>Village/House:</td>
+		 <td><input type="text" name="fullname" ></td>
+	 </tr>
+          <tr>
+	     <td>Road/Block/Sector:</td>
+		 <td><input type="text" name="fullname" ></td>
+	 </tr>
+     <tr>
+	     <td>District:</td>
+		 <td>
+		  <select>
+           <option value="district">-select-</option>
+		  </select>
+		 </td>
+	 </tr>
+	 <tr>
+	     <td>Police Station:</td>
+		 <td>
+		  <select>
+           <option value="station"> </option>
+		  </select>
+		 </td>
+	 </tr>
+	 <tr>
+	     <td>Post Office:</td>
+		 <td>
+		  <select>
+           <option value="office"> </option>
+		  </select>
+		 </td>
+	 </tr>
+	 	<tr><td colspan="2"><h2>Permanent Address</h2></td></tr>
+	     <tr>
+	     <td>Village/House:</td>
+		 <td><input type="text" name="fullname" ></td>
+	 </tr>
+     <tr>
+	     <td>Road/Block/Sector:</td>
+		 <td><input type="text" name="fullname" ></td>
+	 </tr>
+     <tr>
+	     <td>District:</td>
+		 <td>
+		  <select>
+           <option value="district">-select-</option>
+		  </select>
+		 </td>
+	 </tr>
+	 <tr>
+	     <td>Police Station:</td>
+		 <td>
+		  <select>
+           <option value="station"> </option>
+		  </select>
+		 </td>
+	 </tr>
+	 <tr>
+	     <td>Post Office:</td>
+		 <td>
+		  <select>
+           <option value="office"> </option>
+		  </select>
+		 </td>
+	 </tr>
+	<tr> 
+      <td></td>
+      <td colspan="2"><input type="submit" value="Next page"></td>
+    </tr>
+	<tr>
+	     <td> </td>
+		 <td>
+		  
+		 </td>
+	 </tr>
+	 </form>
+	</table>
+    
+   </div> 
+</article>   
+ </section>   
+</body>
+</html> 
