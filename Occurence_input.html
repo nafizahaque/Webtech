@@ -1,0 +1,51 @@
+ <html>
+	<head>
+		<style>
+			input[type="submit"]{
+			/* change these properties to whatever you want */
+			background-color: #00CC00;
+			color: #fff;
+			border-radius: 10px;
+			padding: 10px;
+			cursor: pointer;
+			}
+			.button {
+			background-color: #FF9933;
+			border: none;
+			color: white;
+			padding: 10px;
+			border-radius: 10px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			/*font-size: 16px;
+			margin: 10px 2px;*/
+			cursor: pointer;
+			border-radius: 10px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<br/>
+		<br/>
+		<hr>
+		<h2 style="text-align:center;">Character Frequiency Counter</h3>
+		<hr/>
+		<h5 style="text-align:center;">Insert your string into the following text area to get the count per character</h5>
+		<form action="Occurence.php" method="post">
+			<textarea id="textarea1" rows="4" cols="80" name="myText" style="margin-left:auto;margin-right:auto;display:block;"></textarea>
+			<center>
+			<input type="submit" value="Count"/>
+			<input type="button" onclick="clear1();" class="button" value="Clear">
+			
+			</center>
+		</form>
+<script>
+function clear1()
+   {  
+   document.getElementById("textarea1").value = "";
+   }
+</script>
+	</body>
+</html>
